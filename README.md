@@ -24,7 +24,7 @@ To Launches the test runner in the interactive watch mode.
 *Note : if API fail (there is api limit), check API KEY on src/utils/config or create env REACT_APP_API_KEY
 
 🛠️ Tools
-React
-Axios
-Redux
-Styled Components
+- React
+- Axios
+- Redux
+- Styled Components
