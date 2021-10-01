@@ -4,10 +4,10 @@ import Movie from './Movie';
 
 export default function MovieList({ movies, handlePoster }) {
   return (
-    <>
+    <div >
       {!movies.length ? (
         <MovieContainer>
-          <Title>No Movie Found</Title>
+          <Title data-testid="no-data">No Movie Found</Title>
         </MovieContainer>
       ) : (
         movies.map((movie, index) => {
@@ -16,7 +16,7 @@ export default function MovieList({ movies, handlePoster }) {
           );
         })
       )}
-    </>
+    </div>
   );
 }
 

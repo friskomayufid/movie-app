@@ -8,8 +8,8 @@ export default function MovieDetail({ detail }) {
       <Link to="/">
         <Button>Back to List</Button>
       </Link>
-      <Image src={detail.Poster} alt={detail.Title}></Image>
-      <Title>{detail.Title}</Title>
+      <Image src={detail.Poster} alt={detail.Title} data-testid="poster"></Image>
+      <Title data-testid="title">{detail.Title}</Title>
       <Desc>
         Year : {detail.Year} || Type: {detail.Type}
       </Desc>

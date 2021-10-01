@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 
-export default function SearchMovie({ handleChange, handleSearch }) {
-  const movie = useSelector((state) => state.movie);
+export default function SearchMovie({ handleChange, handleSearch, movie }) {
+  // const  = useSelector((state) => state.movie);
 
   return (
     <SearchContainer>
@@ -12,6 +12,7 @@ export default function SearchMovie({ handleChange, handleSearch }) {
         placeholder="Search Movie"
         onChange={handleChange}
         value={movie}
+        data-testid="search"
       ></Input>
     </SearchContainer>
   );

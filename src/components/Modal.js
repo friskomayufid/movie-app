@@ -4,9 +4,9 @@ const Modal = ({ handleClose, show, poster }) => {
   const showHideClassName = show ? 'display-block' : 'display-none';
 
   return (
-    <ModalContainer className={showHideClassName}>
+    <ModalContainer className={showHideClassName} data-testid="modal">
       <Section className="modal-main">
-        <img src={poster} alt={poster} />
+        <img src={poster} alt={poster} data-testid="poster"/>
         <CloseButton type="button" onClick={handleClose}>
           x
         </CloseButton>

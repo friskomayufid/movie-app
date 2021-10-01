@@ -83,7 +83,7 @@ function Home() {
 
   return (
     <Container>
-      <SearchMovie handleChange={handleChange} />
+      <SearchMovie handleChange={handleChange} movie={movie}/>
       <MovieList movies={movies} handlePoster={handlePoster} />
       <div className="loading" ref={lastBookElementRef}>
         <h2 style={{ textAlign: 'center' }}>...</h2>

@@ -4,15 +4,16 @@ import { Link } from 'react-router-dom';
 
 export default function Movie({ movie, handlePoster, lastIndex }) {
   return (
-    <MovieContainer ref={lastIndex}>
+    <MovieContainer ref={lastIndex} data-testid="movie-container">
       <Image
         src={movie.Poster}
         alt={movie.Title}
         onClick={() => handlePoster(movie.Poster)}
+        data-testid="poster"
       ></Image>
       <Link to={`/details/${movie.imdbID}`}>
-        <Title>{movie.Title}</Title>
-        <Desc>
+        <Title data-testid="title">{movie.Title}</Title>
+        <Desc data-testid="desc">
           Year : {movie.Year} || Type: {movie.Type}
         </Desc>
       </Link>
